@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">W+</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="account_type">com.android.williamtygret.datasync</string>
+    <string name="account">default_account</string>
+
+</resources>

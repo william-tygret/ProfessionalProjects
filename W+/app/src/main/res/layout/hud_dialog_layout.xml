@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewDialog"
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hud"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Data syncs automatically every minute while app open
+\n\nCards are animated - they fly in from the bottom of the screen - on each recycler view refresh
+\nWeb data saved to database for offline access
+\n\nNYTimes headlines/thumbnails link out to the article in the browser
+\n\nUser can log into facebook
+\n\nReminders are saved in database when added
+\n\nIf alarm date/time set for reminder, a notification w/ alert sound launches at that time
+\n\nMTA card shows MTA's status widget, which is interactive"
+            android:id="@+id/textViewDialog"
+            android:layout_below="@id/imageViewDialog"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewDialog"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pokedex"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The Pokedex app allows you to search from a Pokemon database containing all 151 of the origional Pokemon
+\n\nUsers can search Pokemon by Name or Type
+\n\nUpon searching you can access each Pokemon's unique information
+\n\nThe Pokedex allows you to catch Pokemon and add or remove them from a favorites list
+\n\nApp pulls Pokemon images from an online source"
+        android:id="@+id/textViewDialog"
+        android:layout_below="@id/imageViewDialog"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
+    </ScrollView>

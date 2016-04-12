@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutCardView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:cardBackgroundColor="@color/resumetrans"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resumeAboutLayout"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/resumeAboutTitle"
+            android:text="About"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeAboutDesc"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/resumeAboutTitle"
+            android:visibility="gone"
+            android:text=" "
+            android:textSize="18sp"
+            />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutCardView"
+        android:id="@+id/expCardView"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="0dp"
+        app:cardBackgroundColor="@color/resumetrans"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resumeExpLayout"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/resumeExpTitle"
+                android:text="Professional Experience"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeExpGA"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpTitle"
+                android:text="General Assembly"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeGADesc"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpGA"
+                android:visibility="gone"
+                android:text=" "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeExpRoomi"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeGADesc"
+                android:text="Roomi"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeRoomiDesc"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpRoomi"
+                android:visibility="gone"
+                android:text=" "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeExpGalison"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeRoomiDesc"
+                android:text="Galison/Mudpuppy"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeGalisonDesc"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpGalison"
+                android:visibility="gone"
+                android:text=" "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeExpSterling"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeGalisonDesc"
+                android:text="Sterling Brands"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeSterlingDesc"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpSterling"
+                android:visibility="gone"
+                android:text=" "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeExpOKC"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeSterlingDesc"
+                android:text="Oklahoma City Thunder"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumeOKCDesc"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/resumeExpOKC"
+                android:visibility="gone"
+                android:text=" "
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expCardView"
+        android:id="@+id/eduCardView"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="0dp"
+        app:cardBackgroundColor="@color/resumetrans"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resumeEduLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/resumeEduTitle"
+            android:text="Education"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeEduGA"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/resumeEduTitle"
+            android:text="General Assembly"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeGAEduDesc"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/resumeEduGA"
+            android:visibility="gone"
+            android:text=" "
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeEduOCU"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/resumeGAEduDesc"
+            android:text="Oklahoma City University"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeOCUDesc"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/resumeEduOCU"
+            android:visibility="gone"
+            android:text=" "
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/skillsCardView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="6dp"
+        app:cardBackgroundColor="@color/resumetrans"
+        app:cardElevation="3dp"
+        android:layout_below="@id/eduCardView"
+        app:cardCornerRadius="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resumeSkillsLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/resumeSkillsTitle"
+            android:text="Skills"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillsLinear1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@id/resumeSkillsTitle"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Studios"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IntelliJ"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe InDesign"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillsLinear2"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@id/skillsLinear1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe Photoshop"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe Illustrator"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SQLite"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fine Art"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendResumeCardView"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@id/skillsCardView"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="6dp"
+        app:cardBackgroundColor="@color/resumetrans"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactEmail"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="24sp"
+                android:elevation="0dp"
+                android:text="Get Resume in PDF"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutCardViewInnerSender"
+                android:layout_below="@id/contactEmail"
+                android:layout_marginRight="10dp"
+                android:layout_alignStart="@id/contactEmail"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/resume"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/contactEmailInputAddress"
+                    android:layout_centerVertical="true"
+                    android:textColorHint="@color/resumetrans"
+                    android:hint="Enter Your Email Address Here"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:id="@+id/contactSendButton"
+                    android:background="@drawable/mybutton2"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
+</ScrollView>
