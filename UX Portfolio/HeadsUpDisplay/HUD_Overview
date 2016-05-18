@@ -1,0 +1,11 @@
+###HUD OverView
+-HeadsUpDisplay is an app that pulls various information the user will want to access daily and putting it together in a central location
+-Info includes: Daily weather forecast, Top News Stories from the NYTimes API, News from Facebook Feed, an editable Reminders Card, and an MTA status Card
+-Cards update every minute automatically using a Sync Adapter 
+
+
+##William's work in HUD
+-Create Layout: 1 Activity using CardViews within a Recycler View that
+-Pull the Top 10 Stories from the NYTimes API
+-Implement animation that loads each card from the bottom using a staggered delay where each card translates upwards 200 milliseconds after the previous card on onCreate and whenever the Sync Adapter updates the info
+-Planned, Designed, and Implemented a visual theme based off of Mark Rothko paintings
